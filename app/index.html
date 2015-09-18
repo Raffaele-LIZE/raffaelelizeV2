@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>RDev</title>
+		<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" href="assets/owl.carousel.css">
+		<link rel="stylesheet" href="styles/style.css">
+		<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="../bower_components/angular/angular.min.js"></script>
+		<script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+		<script src="../bower_components/jquery-sticky/jquery.sticky.js"></script>
+		<script src="../bower_components/bootstrap/js/carousel.js"></script>
+		<script src="scripts/jquery.tagsphere.js"></script>
+		<script src="scripts/app.js"></script>
+		<script src="scripts/main.js"></script>
+	</head>
+
+	<body ng-app="rdev">
+	 	<header class="header">
+			<div class="row">
+				<div class="col-md-12">
+					<img src="http://lorempixel.com/1280/100/" alt="">
+				</div>
+			</div>
+			<div class="top-bar row">
+				<div class="col-xs-12 col-sm-6 col-md-4 logo">
+					<img class="logo" src="http://lorempixel.com/200/60/" alt="">
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-8 main-menu">
+					<div class="row">
+						<ul>
+							<li class="col-md-3 item-menu">Accueil</li>
+							<li class="col-md-3 item-menu projects">Mes projets
+								<div class="sous-menu">
+									<ul>
+										<li><span><a href="experience.html">Groupe Consensus</a></span></li>
+										<li><span>Pixel Cookers</span></li>
+										<li><span>Projets Personnels</span></li>
+									</ul>
+								</div>
+							</li>
+							<li class="col-md-3 item-menu">Mes objectifs</li>
+							<li class="col-md-3 item-menu">Contact</li>
+						</ul>
+					</div>
+				</div>		
+			</div>
+		</header>
+	
+	 	<div class="container">	
+	 		<div ui-view></div>
+		</div>
+
+		<footer class="footer">
+			
+		</footer>
+		
+		<!-- CONTROLLERS -->
+		<script src="scripts/controllers/home-ctrl.js"></script>
+		<!-- DIRECTIVES -->
+		<!-- SERVICES -->
+		<script src="scripts/services/content-service.js"></script>
+  	</body>
+
+</html>

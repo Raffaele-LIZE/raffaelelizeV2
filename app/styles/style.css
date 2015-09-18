@@ -1,0 +1,120 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+
+}
+header, footer {
+	/*width: 1280px;*/
+	margin: 0 auto;
+}
+section {
+	height: 300px;
+	z-index: 1;
+	/*width: 1280px;*/
+	margin: 0 auto;
+}
+
+h1, h2, h3, h4 {
+	font-family: lato
+}
+
+li {
+	text-decoration: none;
+	list-style: none;
+}
+.carousel {
+	min-height: 500px;
+	z-index: 1;
+}
+.carousel .item {
+	height: 500px;
+}
+.top-bar {
+	position: relative;
+	height: 75px;
+	width: 100%;
+	z-index: 10;
+	background: #fff;
+	box-shadow: 0 4px 2px -2px gray;
+}
+.logo {
+	padding-top: 5px;
+	text-align: center;
+}
+.projects {
+	position: relative;
+}
+.sous-menu {
+	position: absolute;
+	display: none;
+	top: 75px;
+	height: 200px;
+}
+.sous-menu li {
+	position: relative;
+	list-style-type: none;
+	text-align: left;
+	cursor: pointer;
+}
+.sous-menu li:before {
+	content: '';
+	position: absolute;
+	display: block;
+	height: 30px;
+	width: 30px;
+	top: 20px;
+	left: 8px;
+	background: red;
+}
+.sous-menu li span{
+	padding-left: 50px;
+}
+.item-menu {
+	float: left;
+	height: auto;
+	text-align: center;
+	line-height: 70px;
+	text-decoration: none;
+	list-style-type: none;
+	cursor: pointer;
+}
+
+/* Section présentation */
+.presentation {
+	background-color: #f9f9f9;
+}
+
+.presentation .pix {
+	border: 1px solid grey;
+	height: 300px;
+}
+
+.presentation .item-logo {
+	background-color: red;
+}
+
+/* Section about me */
+.about-me .skills {
+	margin-bottom: 5px;
+}
+
+.about-me .item-logo {
+	height: 72px;
+	border: 1px solid #000000;
+}
+
+/* Experience */
+.agency-banner {
+	height: 150px;
+}
+.agency-about {
+	height: 150px;
+}
+
+/* Footer */
+.footer {
+	height: 200px;
+	background-color: #f9f9f9;
+} 
