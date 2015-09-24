@@ -10,15 +10,7 @@
 	<h2>Mes travaux :</h2>
 </section>
 <section class="works">
-	<div class="row"> <!-- TODO NG-REPEAT WORKS BY ID PROJECT ID -->
-		<div rd-work></div>
-	
-		<!-- TEMPLATE DIRECTIVE RD-WORK -->
-		<!-- <h3 class="work-name">NAME WORK</h3>
-		<div class="row">
-			<div class="col-md-6 work-description"></div>
-			<div class="col-md-6 work-carousel"></div>
-		</div> -->
-
+	<div class="row" ng-repeat="work in works">
+		<div rd-work work="work"></div> <!-- TODO REPLACE TRUE ATTRIBUTE DIRECTIVE -->
 	</div>
 </section>

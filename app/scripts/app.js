@@ -20,7 +20,10 @@ app.config(function($stateProvider, $urlRouterProvider) {
     })
     .state('project', {
       url: '/project/:id',
-      templateUrl: 'views/project.html'
+      templateUrl: 'views/project.html',
+      controller: 'ProjectCtrl'
+
+      // TODO RESOLVE OBJ BY EXP ID
     })
     .state('career', {
       url: '/career',
