@@ -19,11 +19,15 @@ app.config(function($stateProvider, $urlRouterProvider) {
       controller: 'ProjectWallCtrl',
     })
     .state('project', {
-      url: '/project/{}',
+      url: '/project/:id',
       templateUrl: 'views/project.html'
     })
+    .state('career', {
+      url: '/career',
+      templateUrl: 'views/career.html'
+    })
     .state('contact', {
-      url: '/list',
-      templateUrl: 'partials/state2.list.html'
+      url: '/contact',
+      templateUrl: 'views/contact.html'
     });
 });

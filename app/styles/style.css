@@ -24,6 +24,17 @@ li {
 	text-decoration: none;
 	list-style: none;
 }
+
+a {
+	text-decoration: none;
+	color: #000000;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #000000;
+}
+
 .carousel {
 	min-height: 500px;
 	z-index: 1;
@@ -37,6 +48,7 @@ li {
 	width: 100%;
 	z-index: 10;
 	background: #fff;
+	opacity: 0.9;
 	box-shadow: 0 4px 2px -2px gray;
 }
 .logo {
