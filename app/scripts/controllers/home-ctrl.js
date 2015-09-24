@@ -15,6 +15,4 @@ app.controller('HomeCtrl', ['$scope', function($scope) {
 		baseline: '...',
 		img: 'http://lorempixel.com/1440/500/technics/'
 	}];
-
-	console.log($scope.carousels);
 }]);	

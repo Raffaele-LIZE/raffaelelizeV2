@@ -17,7 +17,7 @@
 	</head>
 
 	<body ng-app="rdev">
-	 	<header class="header">
+	 	<header class="header" ng-controller="HeaderCtrl">
 			<div class="row">
 				<div class="col-md-12">
 					<img src="http://lorempixel.com/1280/100/" alt="">
@@ -33,10 +33,11 @@
 							<li class="col-md-3 item-menu">Accueil</li>
 							<li class="col-md-3 item-menu projects">Mes projets
 								<div class="sous-menu">
-									<ul> <!-- TODO NG-REPEAT with ui-sref -->
-										<li><span><a href="experience.html">Groupe Consensus</a></span></li>
-										<li><span>Pixel Cookers</span></li>
-										<li><span>Projets Personnels</span></li>
+									<ul ng-repeat=""> <!-- TODO NG-REPEAT with ui-sref -->
+										<li><span><a ui-sref="experience.html">Imagera</a></span></li>
+										<li><span><a ui-sref="experience.html">Groupe Consensus</a></span></li>
+										<li><span><a ui-sref="experience.html">Pixel Cookers</a></span></li>
+										<li><span><a ui-sref="experience.html">Projets Personnels</a></span></li>
 									</ul>
 								</div>
 							</li>
@@ -58,6 +59,7 @@
 		
 		<!-- CONTROLLERS -->
 		<script src="scripts/controllers/home-ctrl.js"></script>
+		<script src="scripts/controllers/header-ctrl.js"></script>
 		<!-- DIRECTIVES -->
 		<!-- SERVICES -->
 		<script src="scripts/services/content-service.js"></script>
