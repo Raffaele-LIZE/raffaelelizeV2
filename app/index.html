@@ -33,11 +33,8 @@
 							<li class="col-md-3 item-menu">Accueil</li>
 							<li class="col-md-3 item-menu projects">Mes projets
 								<div class="sous-menu">
-									<ul ng-repeat=""> <!-- TODO NG-REPEAT with ui-sref -->
-										<li><span><a ui-sref="experience.html">Imagera</a></span></li>
-										<li><span><a ui-sref="experience.html">Groupe Consensus</a></span></li>
-										<li><span><a ui-sref="experience.html">Pixel Cookers</a></span></li>
-										<li><span><a ui-sref="experience.html">Projets Personnels</a></span></li>
+									<ul ng-repeat="project in projects">
+										<li><span><a ui-sref="project({id: project.id})">{{project.name}}</a></span></li>
 									</ul>
 								</div>
 							</li>
