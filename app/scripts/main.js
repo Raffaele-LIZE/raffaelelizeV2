@@ -63,4 +63,13 @@ window.onload = function() {
 			timer: 50
 		});
 	});
+
+	$(document).ready(function(){
+	  $(".owl-carousel").owlCarousel({
+	  	items: 1,
+	  	loop: true,
+	  	center: true,
+	  	autoplay: true
+	  });
+	});
 }

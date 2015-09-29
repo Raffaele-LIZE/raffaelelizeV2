@@ -1,16 +1,14 @@
 <section>
 	<div class="row">
-		<div class="col-md-12 banner-project"></div>
+		<div class="col-md-12 banner-project">
+			<img src="http://lorempixel.com/1280/100/" alt="">
+			<div class="description-project"></div>
+		</div>
 	</div>
-	<div class="row">
-		<div class="col-md-12 description-project"></div>
-	</div>
-</section>
-<section class="row">
-	<h2>Mes travaux :</h2>
 </section>
 <section class="works">
+	<h2>Mes travaux :</h2>
 	<div class="row" ng-repeat="work in works">
-		<div rd-work work="work"></div> <!-- TODO REPLACE TRUE ATTRIBUTE DIRECTIVE -->
+		<div rd-work work="work"></div>
 	</div>
 </section>

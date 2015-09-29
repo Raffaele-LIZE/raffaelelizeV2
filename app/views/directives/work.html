@@ -1,6 +1,17 @@
 <!-- TEMPLATE DIRECTIVE RD-WORK -->
 <h3 class="work-name">{{work.title}}</h3>
 <div class="row">
-	<div class="col-md-6 work-description"></div>
-	<div class="col-md-6 work-carousel"></div>
+	<div class="col-md-6 work-description">
+		<span>{{work.mission}}</span>
+		<div ng-repeat="tool in work.tools">
+			<span>{{tool}}</span>
+		</div>
+	</div>
+	<div class="col-md-6 work-carousel" style="border:1px solid red; height: 100px;">
+		<div class="owl-carousel">
+		  <div> Your Content1 </div>
+		  <div> Your Content2 </div>
+		  <div> Your Content3 </div>
+		</div>
+	</div>
 </div>
