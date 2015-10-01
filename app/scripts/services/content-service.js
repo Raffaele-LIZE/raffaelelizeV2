@@ -3,7 +3,7 @@ app.factory('ContentService', function() {
 
 	return { 
     	experiences: [{ 
-            id: 1,
+            id: 0,
     		name: 'Imagera',
     		banner: 'http://lorempixel.com/1440/100/business/',
     		baseline: 'Memoriam incedit: familiae mares reginae.',
@@ -19,7 +19,7 @@ app.factory('ContentService', function() {
     		}
     	},
     	{
-            id: 2,
+            id: 1,
     		name: 'Groupe Consensus',
     		banner: 'http://lorempixel.com/1440/100/business/',
     		baseline: 'Seditionum perlato concitores acueret aurum.',
@@ -35,7 +35,7 @@ app.factory('ContentService', function() {
     		}
     	},
     	{ 
-            id: 3,
+            id: 2,
     		name: 'Pixel Cookers',
     		banner: 'http://lorempixel.com/1440/100/business/',
     		baseline: 'Exigue aut defluat officiis et.',
@@ -70,7 +70,7 @@ app.factory('ContentService', function() {
             }]
     	},
         {
-            id: 4,
+            id: 3,
             name: 'Projets personnels',
             banner: 'http://lorempixel.com/1440/100/business/',
             baseline: 'Seditionum perlato concitores acueret aurum.',

@@ -31,8 +31,8 @@
 				<div class="col-xs-12 col-sm-6 col-md-8 main-menu">
 					<div class="row">
 						<ul>
-							<li class="col-md-3 item-menu">Accueil</li>
-							<li class="col-md-3 item-menu projects">Mes projets
+							<li class="col-md-3 item-menu" ui-sref="home">Accueil</li>
+							<li class="col-md-3 item-menu projects" ui-sref="home">Mes projets
 								<div class="sous-menu">
 									<ul ng-repeat="project in projects">
 										<li><span><a ui-sref="project({id: project.id})">{{project.name}}</a></span></li>
