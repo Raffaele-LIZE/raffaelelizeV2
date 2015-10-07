@@ -13,17 +13,15 @@ app.config(function($stateProvider, $urlRouterProvider) {
       templateUrl: 'views/home.html',
       controller: 'HomeCtrl',
     })
-    .state('project-wall', {
-      url: '/project-wall',
-      templateUrl: 'views/project-wall.html',
-      controller: 'ProjectWallCtrl',
-    })
+    // .state('wall', {
+    //   url: '/wall',
+    //   templateUrl: 'views/wall.html',
+    //   controller: 'WallCtrl'
+    // })
     .state('project', {
       url: '/project/:id',
       templateUrl: 'views/project.html',
       controller: 'ProjectCtrl'
-
-      // TODO RESOLVE OBJ BY EXP ID
     })
     .state('career', {
       url: '/career',
@@ -31,6 +29,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
     })
     .state('contact', {
       url: '/contact',
-      templateUrl: 'views/contact.html'
+      templateUrl: 'views/contact.html',
+      controller: 'ContactCtrl'
     });
 });

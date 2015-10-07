@@ -5,4 +5,6 @@ app.controller('ProjectCtrl', ['$scope','$state','$stateParams', 'ContentService
   $scope.idProject = $stateParams.id;
   // Get all works experience by ID
   $scope.works = ContentService.experiences[$scope.idProject].works;
-}]);	
+
+  console.log($scope.works);
+}]);

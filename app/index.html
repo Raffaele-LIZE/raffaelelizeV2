@@ -10,7 +10,6 @@
 		<script src="../bower_components/angular/angular.min.js"></script>
 		<script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
 		<script src="../bower_components/jquery-sticky/jquery.sticky.js"></script>
-		<script src="../bower_components/bootstrap/js/carousel.js"></script>
 		<script src="../bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
 		<script src="scripts/jquery.tagsphere.js"></script>
 		<script src="scripts/app.js"></script>
@@ -32,15 +31,15 @@
 					<div class="row">
 						<ul>
 							<li class="col-md-3 item-menu" ui-sref="home">Accueil</li>
-							<li class="col-md-3 item-menu projects" ui-sref="home">Mes projets
+							<li class="col-md-3 item-menu projects">Mes projets <!-- Can't put multi ui-sref in same tag -->
 								<div class="sous-menu">
 									<ul ng-repeat="project in projects">
-										<li><span><a ui-sref="project({id: project.id})">{{project.name}}</a></span></li>
+										<li><span><a ui-sref="project({id:project.id})">{{project.name}}</a></span></li>
 									</ul>
 								</div>
 							</li>
-							<li class="col-md-3 item-menu">Mes objectifs</li>
-							<li class="col-md-3 item-menu">Contact</li>
+							<li class="col-md-3 item-menu" ui-sref="career">Mes objectifs</li>
+							<li class="col-md-3 item-menu" ui-sref="contact">Contact</li>
 						</ul>
 					</div>
 				</div>		
@@ -59,6 +58,7 @@
 		<script src="scripts/controllers/home-ctrl.js"></script>
 		<script src="scripts/controllers/header-ctrl.js"></script>
 		<script src="scripts/controllers/project-ctrl.js"></script>
+		<script src="scripts/controllers/contact-ctrl.js"></script>
 		<!-- DIRECTIVES -->
 		<script src="scripts/directives/rd-work.js"></script>
 		<!-- SERVICES -->
