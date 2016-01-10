@@ -1,3 +1,6 @@
+/* DarkGrey : #2b2b2b */
+/* Blood : #d30202 */
+
 * {
 	margin: 0;
 	padding: 0;
@@ -17,7 +20,13 @@ section {
 }
 
 h1, h2, h3, h4 {
-	font-family: lato
+	font-family: lato, arial, sans-serif;
+	display: block;
+	border-bottom: 1px solid #d30202;
+}
+
+ul {
+	margin: 0;
 }
 
 li {
@@ -28,20 +37,29 @@ li {
 a {
 	text-decoration: none;
 	color: #000000;
+	cursor: pointer;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #000000;
 }
 
 a:hover {
 	text-decoration: none;
 	color: #000000;
 }
+p {
+	font-size: 1.1em;
+	font-family: Helvetica, Arial, sans-serif;
+}
+.banner {
+	width: 500px;
+	display: block;
+	margin: 0 auto;
+}
 
-.carousel {
-	min-height: 500px;
-	z-index: 1;
-}
-.carousel .item {
-	height: 500px;
-}
+/* TOP BAR MENU */
 .top-bar {
 	position: relative;
 	height: 75px;
@@ -57,6 +75,12 @@ a:hover {
 }
 .projects {
 	position: relative;
+}
+.menu {
+	font-family: lato, arial, sans-serif;
+	font-weight: bold;
+	font-size: 1.2em;
+	color: #2b2b2b;
 }
 .sous-menu {
 	position: absolute;
@@ -92,6 +116,21 @@ a:hover {
 	list-style-type: none;
 	cursor: pointer;
 }
+.item-menu:hover {
+	color: #d30202;
+}
+
+/************/
+/*** HOME ***/
+/************/
+/* Carousel */
+.carousel {
+	min-height: 500px;
+	z-index: 1;
+}
+.carousel .item {
+	height: 500px;
+}
 
 /* Section présentation */
 .presentation {
@@ -99,12 +138,40 @@ a:hover {
 }
 
 .presentation .pix {
-	border: 1px solid grey;
+	margin-top: 20px;
 	height: 300px;
+	border: 1px solid grey;
+	border-radius: 150px;
+	background: url("../images/raffaele_lize.png") center no-repeat;
+	background-size: cover;
 }
 
-.presentation .item-logo {
-	background-color: red;
+.presentation .download-cv {
+	margin-top: 20px;
+}
+
+.presentation .download-cv a {
+	display: block;
+	width: 100%;
+	height: 50px;
+	border: 2px solid #d30202;
+	border-radius: 25px;
+	color: #2b2b2b;
+	line-height: 48px;
+	text-align: center;
+	font-weight: bold;
+	font-famil: Helvetica, Arial, sans-serif;
+	transition: 0.2s linear;
+}
+
+.presentation .download-cv a:hover {
+	font-size: 16px;
+}
+
+.presentation .download-cv a:focus {
+	font-size: 16px;
+	background-color: #2b2b2b;
+	color: #fff;
 }
 
 /* Section about me */
@@ -113,8 +180,10 @@ a:hover {
 }
 
 .about-me .item-logo {
+	display: inline-block;
 	height: 72px;
-	border: 1px solid #000000;
+	width: 72px;
+	margin-right: 5px;
 }
 
 /* Experience */
@@ -129,4 +198,15 @@ a:hover {
 .footer {
 	height: 200px;
 	background-color: #f9f9f9;
-} 
+}
+
+/**************/
+/*** FOOTER ***/
+/**************/
+.footer ul > li {
+	color: #d30202;
+	cursor: pointer;
+}
+.footer ul > li:hover {
+	color: #2b2b2b;
+}

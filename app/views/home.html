@@ -1,62 +1,55 @@
 <section class="carousel row">
 	<div id="carousel-example-generic" class="carousel slide col-md-12" data-ride="carousel">
-	  <!-- Indicators -->
-	  <ol class="carousel-indicators">
-	    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-	    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-	    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-	  </ol>
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+		</ol>
 
-	  <!-- Wrapper for slides -->
-	  <div class="carousel-inner" role="listbox" ng-repeat="carousel in carousels">
-	    <div class="item">
-	      <img src="" alt="{{carousel.title}}">
-	      <div class="carousel-caption">
-			    <h3>{{carousel.title}}</h3>
-			    <p>{{carousel.baseline}}</p>
-			  </div>
-	    </div>
-	  </div>
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner" role="listbox" ng-repeat="carousel in carousels">
+			<div class="item">
+				<img src="" alt="{{carousel.title}}">
+				<div class="carousel-caption">
+					<h3>{{carousel.title}}</h3>
+					<p>{{carousel.baseline}}</p>
+				</div>
+			</div>
+		</div>
 
-	  <!-- Controls -->
-	  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-	    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-	    <span class="sr-only">Previous</span>
-	  </a>
-	  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-	    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-	    <span class="sr-only">Next</span>
-	  </a>
+		<!-- Controls -->
+		<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
 	</div>
 </section>
 <section class="presentation row">
-	<div class="col-md-4 col-sm-6 col-xs-12 pix">
-		<!-- <img src="" alt="raffaele lize"> -->
+	<div class="col-md-4 col-sm-6 col-xs-12">
+		<div class="pix"></div>
+		<div class="download-cv">
+			<a href="#">Télécharger mon CV</a>
+		</div>
 	</div>
 	<div class="col-md-8 col-sm-6 col-xs-12 about-me">
 		<h2>Une petite présentation quand même</h2>
 		<p>
-		dakndkna aznd andi adh azd dgi a gdygqz iudguaqdq s dsdsqbdqvd q d iuqs sb qibsd qduqlsidsq
-		dakndkna aznd andi adh azd dgi a gdygqz iudguaqdq s dsdsqbdqvd q d iuqs sb qibsd qduqlsidsq
-		dakndkna aznd andi adh azd dgi a gdygqz iudguaqdq s dsdsqbdqvd q d iuqs sb qibsd qduqlsidsq
-		dakndkna aznd andi adh azd dgi a gdygqz iudguaqdq s dsdsqbdqvd q d iuqs sb qibsd qduqlsidsq	
+			Bonjour à tous, je suis <b>développeur web & mobile</b> et passionné par le monde du développement infomatique depuis 2011. Rigoureux et perfectionniste je mène mes projets qu'ils soient personnel ou professionnel de A à Z. Je suis constament à la
+			recherche du <b>«Wahou Effect»</b> afin de livrer à mes clients une application unique, personnifié et sur-mesure.
+		</p>
+		<p>
+			Je pars du principe qu'il y une solution à tout et qu'il faut oser l'originalitée.
 		</p>
 		<div class="icon">
-			<div class="skills row">
-				<div class="item-logo col-md-2 col-sm-3 col-xs-4"></div>
-				<div class="item-logo col-md-2 col-sm-3 col-xs-4"></div>
-				<div class="item-logo col-md-2 col-sm-3 col-xs-4"></div>
-				<div class="item-logo col-md-2 col-sm-3 col-xs-4"></div>
-				<div class="item-logo col-md-2 col-sm-3 col-xs-4"></div>
-				<div class="item-logo col-md-2 col-sm-3 col-xs-4"></div>
-			</div>
-			<div class="outils row">
-				<div class="item-logo col-md-2 col-sm-3 col-xs-4"></div>
-				<div class="item-logo col-md-2 col-sm-3 col-xs-4"></div>
-				<div class="item-logo col-md-2 col-sm-3 col-xs-4"></div>
-				<div class="item-logo col-md-2 col-sm-3 col-xs-4"></div>
-				<div class="item-logo col-md-2 col-sm-3 col-xs-4"></div>
-				<div class="item-logo col-md-2 col-sm-3 col-xs-4"></div>
+			<div ng-repeat="iconTab in iconsTab" class="skills">
+				<div ng-repeat="icon in iconTab.icons" class="item-logo">
+					<img src="{{icon.url}}" alt="{{icon.name}}" />
+				</div>
 			</div>
 		</div>
 	</div>
@@ -84,11 +77,15 @@
 				<li><a href="#"> Bureautique</a> </li>
 				<li><a href="#"> Développement</a> </li>
 				<li><a href="#"> Html</a></li>
-				<li><a href="#"> Html-5</a></li> 
+				<li><a href="#"> Html-5</a></li>
 			</ul>
 		</div>
 	</div>
 	<div class="col-md-6 col-xs-12 knowledges">
 		<h2>Compétences en téléchargement</h2>
+		<div ng-repeat="downloadSkill in downloadSkills" class="download-skill">
+			<span>{{downloadSkill}}</span>
+			<img src="images/progress-bar.gif" alt="">
+		</div>
 	</div>
 </section>
