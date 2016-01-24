@@ -1,5 +1,5 @@
 window.onload = function() {
-	
+
 	// MAIN MENU
 	$(function() {
 		$('.projects').hover(
@@ -11,16 +11,21 @@ window.onload = function() {
 			});
 	});
 
-	$(function() {
-		$('.item-logo').hover(
-			function(){
-				$(this).stop().animate({ "bottom": "10px" }, 200);
-			},
-			function(){
-				$(this).stop().animate({ "bottom": "0px" }, 200);
-			}
-		);
-	});
+	// $(function() {
+  //   $('.item-logo').hover(
+  //     function() {
+	// 			console.log('HOVER');
+  //       $(this).stop().animate({
+  //         "bottom": "10px"
+  //       }, 200);
+  //     },
+  //     function() {
+  //       $(this).stop().animate({
+  //         "bottom": "0px"
+  //       }, 200);
+  //     }
+  //   );
+  // });
 
 	$(function() {
 		var topBar = $('.top-bar');
@@ -49,26 +54,6 @@ window.onload = function() {
 			$('.logo').animate({
 				'height':'60px'
 			});
-		});
-	});
-
-	$(function() {
-		$('#tagsphere').tagSphere({
-			height: 300,
-			width: 300,
-			slower: 0.99,
-			radius: 75,
-			speed: 0.2,
-			timer: 50
-		});
-	});
-
-	$(document).ready(function(){
-		$(".owl-carousel").owlCarousel({
-			items: 1,
-			loop: true,
-			center: true,
-			autoplay: true
 		});
 	});
 };

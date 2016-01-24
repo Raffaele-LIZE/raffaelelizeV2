@@ -124,13 +124,7 @@ p {
 /*** HOME ***/
 /************/
 /* Carousel */
-.carousel {
-	min-height: 500px;
-	z-index: 1;
-}
-.carousel .item {
-	height: 500px;
-}
+
 
 /* Section présentation */
 .presentation {
@@ -198,6 +192,8 @@ p {
 .footer {
 	height: 200px;
 	background-color: #f9f9f9;
+	text-align: center;
+	padding-top: 30px;
 }
 
 /**************/
