@@ -1,13 +1,15 @@
 app.controller('HomeCtrl', ['$scope', function($scope) {
   $scope.carousels = [{
-    title: 'IMG1',
-    baseline: '...',
-    img: 'images/carousel/slider_raffaelelize.jpg'
-  }, {
-    title: 'IMG2',
-    baseline: '...',
-    img: 'http://lorempixel.com/1440/500/technics/'
-  }, {
+    title: 'Métro Quizz',
+    baseline: 'Quizz culturel et historique sur les stations du métro parisien destiné à la RATP.',
+    img: 'images/carousel/metroquizz.jpg'
+  },
+  {
+    title: '#DEUXMAINS',
+    baseline: 'Projet promotionnel des Compagnons du Devoir. Qu\'est ce que vous êtes capable de faire de vos deux mains ?!',
+    img: 'images/carousel/deuxmains.jpg'
+  },
+  {
     title: 'IMG3',
     baseline: '...',
     img: 'http://lorempixel.com/1440/500/technics/'
@@ -108,7 +110,33 @@ app.controller('HomeCtrl', ['$scope', function($scope) {
     }]
   }];
 
-  $scope.downloadSkills = ['Swift', 'Android', 'Webpack'];
+  $scope.downloadSkills = [{
+      name:'Swift',
+      progress: '50%'
+    },
+    {
+      name:'Android',
+      progress: '60%'
+    },
+    {
+      name:'Webpack',
+      progress: '20%'
+    },
+    {
+      name:'NodeJs',
+      progress: '70%'
+    }
+  ];
+
+  $(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+      items: 1,
+      autoPlay: true,
+      loop: true,
+      center: true,
+      dots: true
+    });
+  });
 
   $(function() {
     $('#tagsphere').tagSphere({
