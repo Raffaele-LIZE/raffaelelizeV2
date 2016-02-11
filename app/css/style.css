@@ -1,5 +1,6 @@
 /* DarkGrey : #2b2b2b */
 /* Blood : #d30202 */
+/* Royal-blue : #337ab7 */
 
 * {
 	margin: 0;
@@ -13,10 +14,11 @@ header, footer {
 	margin: 0 auto;
 }
 section {
-	height: 300px;
+	/*height: 300px;*/
 	z-index: 1;
 	/*width: 1280px;*/
 	margin: 0 auto;
+	margin-bottom: 20px;
 }
 
 h1, h2, h3, h4 {
@@ -50,9 +52,14 @@ a:hover {
 	color: #000000;
 }
 p {
-	font-size: 1.1em;
+	font-size: 1.3em;
 	font-family: Helvetica, Arial, sans-serif;
 }
+
+.clear {
+	clear: both;
+}
+
 .banner {
 	width: 500px;
 	display: block;
@@ -86,7 +93,9 @@ p {
 	position: absolute;
 	display: none;
 	top: 75px;
-	height: 200px;
+	height: auto;
+	width: 200px;
+	background-color: rgba(255, 255, 255, 0.9);
 }
 .sous-menu li {
 	position: relative;
@@ -102,7 +111,7 @@ p {
 	width: 30px;
 	top: 20px;
 	left: 8px;
-	background: red;
+	background: #d30202;
 }
 .sous-menu li span{
 	padding-left: 50px;
@@ -124,7 +133,65 @@ p {
 /*** HOME ***/
 /************/
 /* Carousel */
+.carousel .layout {
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	right: 0;
+	width: 38%;
+	height: 100%;
+	background: rgba(255,255,255,0.9);
+}
 
+.carousel .layout:before {
+	position: absolute;
+	right: 100%;
+	width: 0;
+	height: 0;
+	content: '';
+	border-top: 700px solid transparent;
+	border-right: 130px solid rgba(255,255,255,0.9);
+}
+
+.carousel .layout .text {
+	margin: 0 auto;
+	margin-top: 50%;
+	width: 80%;
+	height: 200px;
+	color: #d30202;
+}
+
+.carousel .owl-dots {
+	position: absolute;
+	right: 15%;
+	bottom: 20%;
+	width: 150px;
+}
+
+.carousel .owl-dot {
+	float: left;
+	margin: 0 5px;
+}
+
+.carousel .owl-dot span {
+	width: 20px;
+	height: 20px;
+	display: block;
+	border: 2px solid #d30202;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 10px;
+	z-index: 5;
+}
+
+.carousel .owl-dot.active span {
+	width: 20px;
+	height: 20px;
+	display: block;
+	border: 3px solid #d30202;
+	background-color: rgba(211, 2, 2, 0.5);
+	border-radius: 10px;
+	z-index: 5;
+}
 
 /* Section présentation */
 .presentation {
@@ -180,6 +247,25 @@ p {
 	margin-right: 5px;
 }
 
+/* skill-spher */
+.skill-spher a {
+	color: #337ab7;
+}
+
+.skill-spher #tagsphere {
+	width: 500px !important;
+	margin: 0 auto;
+}
+
+/* download skill */
+.knowledges h2 {
+	margin-bottom: 40px;
+}
+
+.download-skill > span {
+	font-size: 1.3em;
+}
+
 /* Experience */
 .agency-banner {
 	height: 150px;
@@ -205,4 +291,14 @@ p {
 }
 .footer ul > li:hover {
 	color: #2b2b2b;
+}
+
+/********************/
+/*** Project Page ***/
+/********************/
+.banner-project img {
+	display: block;
+	height: 100px;
+	width: 100%;
+	border: 1px solid red;
 }

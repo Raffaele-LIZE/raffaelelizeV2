@@ -10,9 +10,19 @@ app.controller('HomeCtrl', ['$scope', function($scope) {
     img: 'images/carousel/deuxmains.jpg'
   },
   {
-    title: 'IMG3',
+    title: 'Armines / Carnot Mines',
     baseline: '...',
-    img: 'http://lorempixel.com/1440/500/technics/'
+    img: 'images/carousel/armines.jpg'
+  },
+  {
+    title: 'Compagnons du devoir',
+    baseline: '...',
+    img: 'images/carousel/compagnons-du-devoir.jpg'
+  },
+  {
+    title: 'Titoff, 15 ans de scène',
+    baseline: '...',
+    img: 'images/carousel/titoff.jpg'
   }];
 
   $scope.iconsTab = [{
