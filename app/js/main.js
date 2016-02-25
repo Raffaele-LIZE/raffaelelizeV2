@@ -11,22 +11,6 @@ window.onload = function() {
 			});
 	});
 
-	// $(function() {
-  //   $('.item-logo').hover(
-  //     function() {
-	// 			console.log('HOVER');
-  //       $(this).stop().animate({
-  //         "bottom": "10px"
-  //       }, 200);
-  //     },
-  //     function() {
-  //       $(this).stop().animate({
-  //         "bottom": "0px"
-  //       }, 200);
-  //     }
-  //   );
-  // });
-
 	$(function() {
 		var topBar = $('.top-bar');
 
