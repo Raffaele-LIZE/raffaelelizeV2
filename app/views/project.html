@@ -3,13 +3,15 @@
 		<div class="col-md-12 banner-project">
 			<img src="{{project.banner}}" alt="">
 		</div>
+		<div class="col-md-12 baseline-project">
+			<span>{{project.baseline}}</span>
+		</div>
 		<div class="col-md-12 description-project">
-
+			<p>{{project.description}}</p>
 		</div>
 	</div>
 </section>
 <section class="works">
-	<h2>Mes travaux :</h2>
 	<div class="row" ng-repeat="work in works">
 		<div rd-work work="work"></div>
 	</div>
