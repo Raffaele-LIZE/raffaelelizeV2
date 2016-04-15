@@ -70,6 +70,7 @@ p {
 	width: 500px;
 	display: block;
 	margin: 0 auto;
+	margin-top: 20px;
 }
 
 /* TOP BAR MENU */
@@ -164,7 +165,14 @@ p {
 	margin-top: 50%;
 	width: 80%;
 	height: 200px;
+}
+
+.carousel .layout .text h2 {
 	color: #d30202;
+}
+
+.carousel .layout .text p {
+	color: #2b2b2b;
 }
 
 .carousel .owl-dots {
@@ -194,7 +202,7 @@ p {
 	height: 20px;
 	display: block;
 	border: 3px solid #d30202;
-	background-color: rgba(211, 2, 2, 0.5);
+	background-color: rgba(43, 43, 43, 0.5);
 	border-radius: 10px;
 	z-index: 5;
 }
