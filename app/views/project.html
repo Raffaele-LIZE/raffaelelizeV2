@@ -1,18 +1,22 @@
-<section>
-	<div class="row">
-		<div class="col-md-12 banner-project">
-			<img src="{{project.banner}}" alt="">
-		</div>
-		<div class="col-md-12 baseline-project">
-			<span>{{project.baseline}}</span>
-		</div>
-		<div class="col-md-12 description-project">
-			<p>{{project.description}}</p>
+<section class="">
+	<div class="container row">
+		<div class="row">
+			<div class="col-md-12 banner-project">
+				<img src="{{project.banner}}" alt="">
+			</div>
+			<div class="col-md-12 baseline-project">
+				<span>{{project.baseline}}</span>
+			</div>
+			<div class="col-md-12 description-project">
+				<p>{{project.description}}</p>
+			</div>
 		</div>
 	</div>
 </section>
 <section class="works">
-	<div class="row" ng-repeat="work in works">
-		<div rd-work work="work"></div>
+	<div class="container padding-content">
+		<div class="row" ng-repeat="work in works">
+			<div rd-work work="work"></div>
+		</div>
 	</div>
 </section>
