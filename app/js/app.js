@@ -13,11 +13,6 @@ app.config(function($stateProvider, $urlRouterProvider) {
       templateUrl: 'views/home.html',
       controller: 'HomeCtrl',
     })
-    // .state('wall', {
-    //   url: '/wall',
-    //   templateUrl: 'views/wall.html',
-    //   controller: 'WallCtrl'
-    // })
     .state('project', {
       url: '/project/:id',
       templateUrl: 'views/project.html',
