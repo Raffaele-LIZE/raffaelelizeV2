@@ -145,7 +145,10 @@ app.controller('HomeCtrl', ['$scope', function($scope) {
   $(document).ready(function(){
     $('.owl-carousel').owlCarousel({
       items: 1,
-      autoPlay: true,
+      autoplay: true,
+      autoplayTimeout: 6000,
+      autoplayHoverPause: true,
+      smartSpeed: 1000,
       loop: true,
       center: true,
       dots: true,
