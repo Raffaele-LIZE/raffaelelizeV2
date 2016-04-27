@@ -16,6 +16,6 @@
 		</div>
 	</div>
 	<div class="col-md-6 work-carousel zoom">
-		<img src="images/500.jpg" alt="500">
+		<img ng-repeat="image in work.images" src="images/{{image}}" alt="work.title">
 	</div>
 </div>

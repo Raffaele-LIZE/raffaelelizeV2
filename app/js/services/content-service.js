@@ -30,7 +30,7 @@ app.factory('ContentService', function() {
         tools: ['html', 'css'],
         problem: 'Affichage différent suivant les boites mail.',
         resolve: '',
-        images: [],
+        images: ['newletters1.png'],
         site_url: ''
       },
       {
@@ -39,7 +39,7 @@ app.factory('ContentService', function() {
         tools: ['SPIP'],
         problem: '',
         resolve: '',
-        images: [],
+        images: ['consensus-online1.png'],
         site_url: ''
       },{
         title: 'Site Institutionnel Groupe Consensus',
@@ -47,7 +47,7 @@ app.factory('ContentService', function() {
         tools: ['Drupal 7'],
         problem: '',
         resolve: '',
-        images: [],
+        images: ['groupe-consensus1.png'],
         site_url: ''
       }]
     }, {
@@ -64,7 +64,7 @@ app.factory('ContentService', function() {
         tools: ['Angular JS', 'Cordova'],
         problem: 'Apprentissage d\'Angular JS',
         resolve: '',
-        images: [],
+        images: ['top-secret.png'],
         site_url: ''
       }, {
         id_work: 2,
@@ -73,7 +73,7 @@ app.factory('ContentService', function() {
         tools: ['Wordpress'],
         problem: 'Rendre le site responsive.',
         resolve: '',
-        images: [],
+        images: ['lazycookie1.png'],
         site_url: ''
       }, {
         id_work: 3,
@@ -82,7 +82,7 @@ app.factory('ContentService', function() {
         tools: ['Wordpress'],
         problem: '',
         resolve: '',
-        images: [],
+        images: ['titoff1.png'],
         site_url: ''
       }, {
         id_work: 4,
@@ -91,7 +91,7 @@ app.factory('ContentService', function() {
         tools: ['Drupal 7'],
         problem: '',
         resolve: '',
-        images: [],
+        images: ['compagnons1.png'],
         site_url: ''
       }, {
         id_work: 5,
@@ -100,7 +100,7 @@ app.factory('ContentService', function() {
         tools: ['Drupal 7'],
         problem: '',
         resolve: '',
-        images: [],
+        images: ['mines1.png'],
         site_url: ''
       }, {
         id_work: 6,
@@ -109,7 +109,7 @@ app.factory('ContentService', function() {
         tools: ['Drupal 7'],
         problem: '',
         resolve: '',
-        images: [],
+        images: ['microeconomix1.png'],
         site_url: ''
       }, {
         id_work: 7,
@@ -118,7 +118,7 @@ app.factory('ContentService', function() {
         tools: ['Symfony 2','javascript','PandaJS'],
         problem: '',
         resolve: '',
-        images: [],
+        images: ['deuxmains1.png'],
         site_url: ''
       }]
     }, {
@@ -129,12 +129,12 @@ app.factory('ContentService', function() {
       description: 'Tous le projets que vous trouverez dans cette section me permettre de tester des nouvelles techno, de nouvelles approche et son des projets cool mais sérieux. Enjoy ! =)',
       site_url: 'http://www.consensus-online.fr/',
       works: [{
-        title: 'works1',
-        mission: 'jqsbd qndjn qd azd sazeze',
-        tools: ['html', 'css'],
+        title: 'MétroQuizz',
+        mission: 'Réalisation d\'une application mobile cross-platform, culturel et historique lié au station de métro parisien',
+        tools: ['html', 'css', 'javascript'],
         problem: '',
         resolve: '',
-        images: [],
+        images: ['metroquizz1.png'],
         site_url: ''
       }]
     }]
