@@ -1,4 +1,8 @@
 app.controller('HomeCtrl', ['$scope', function($scope) {
+
+  // fake console log
+  console.log('Ce console log est-il volontaire ? À vous d\'en jugez ! =p');
+
   $scope.carousels = [{
     title: 'Métro Quizz',
     baseline: 'Quizz culturel et historique sur les stations du métro parisien destiné à la RATP.',
@@ -11,17 +15,17 @@ app.controller('HomeCtrl', ['$scope', function($scope) {
   },
   {
     title: 'Armines / Carnot Mines',
-    baseline: '...',
+    baseline: 'Site officiel des écoles Mines, Armines & Carnotmines',
     img: 'images/carousel/armines.jpg'
   },
   {
     title: 'Compagnons du devoir',
-    baseline: '...',
+    baseline: 'Site institutionnel des compagnons du devoir',
     img: 'images/carousel/compagnons-du-devoir.jpg'
   },
   {
     title: 'Titoff, 15 ans de scène',
-    baseline: '...',
+    baseline: 'Site vitrine pour la promotion de la dernière tournée de Titoff',
     img: 'images/carousel/titoff.jpg'
   }];
 
@@ -144,7 +148,8 @@ app.controller('HomeCtrl', ['$scope', function($scope) {
       autoPlay: true,
       loop: true,
       center: true,
-      dots: true
+      dots: true,
+      nav: true,
     });
   });
 
