@@ -4,6 +4,7 @@ app.factory('ContentService', function() {
     experiences: [{
       id: 0,
       name: 'Imagera',
+      class: 'imagera',
       banner: 'images/banner_imagera.jpg',
       baseline: 'RÉACTIVITÉ, DISPONIBILITÉ ET COMPÉTITIVITÉ',
       description: 'Imagera est la première agence de photographes dotée d’un réseau international de 1 462 photographes et vidéastes professionnels. Ce réseau permet à l\'entreprise d\'être très compétitive et de proposer un panel de professionnels dans plusieurs domaines. Ainsi, imagera dispose de photographes spécialisés en publicité, évènementiel, photo culinaire, architecturale, etc. Aujourd’hui imagera est donc capable de mettre à votre disposition, partout en France, le ou les photographes professionnels spécialisés dans le domaine dont votre entreprise a besoin et cela à prix abordable.',
@@ -14,12 +15,13 @@ app.factory('ContentService', function() {
         tools: ['html','css','Drupal 6'],
         problem: '',
         resolve: '',
-        images: [],
+        images: ['top-secret.png'],
         site_url: ''
       }]
     }, {
       id: 1,
       name: 'Groupe Consensus',
+      class: 'groupe-consensus',
       banner: 'images/banner_groupe-consensus.jpg',
       baseline: 'Au coeur de l\'action !',
       description: 'Le Groupe Consensus propose au médecin et intéressé du monde entier de suivre toute l\'actus et innovation autour de la cardiologie à travers de nombreuses revues mais aussi de son site internet.',
@@ -53,6 +55,7 @@ app.factory('ContentService', function() {
     }, {
       id: 2,
       name: 'Pixel Cookers',
+      class: 'pixel-cookers',
       banner: 'images/banner_pixel.jpg',
       baseline: 'L\'agence web super héroïque !',
       description: 'Agence de création graphique et de développement web, Pixel Cookers est basée à Neuville-sur-Oise dans la pépinière d\'entreprises, Neuvitec 95. Fondée par trois étudiants de l\'EISTI accompagnés d\'un créatif, l\'agence est composé d\'une équipe jeune, dynamique et travaille pour des boîtes aussi prestigieuses que TF1, IBM ou Albin Michel. Plus localement, Pixel Cookers a notamment été en charge de la direction artistique d\'ANPER95, portail numérique des collèges valdoisiens et a également refait du sol au plafond l\'identité graphique et le site internet de la base de loisirs de Cergy-Pontoise.',
@@ -124,6 +127,7 @@ app.factory('ContentService', function() {
     }, {
       id: 3,
       name: 'Projets personnels',
+      class: 'lab',
       banner: 'images/banner_personal-projects.jpg',
       baseline: 'Bienvenue dans le Lab',
       description: 'Tous le projets que vous trouverez dans cette section me permettre de tester des nouvelles techno, de nouvelles approche et son des projets cool mais sérieux. Enjoy ! =)',

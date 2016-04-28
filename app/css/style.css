@@ -110,6 +110,12 @@ p {
 	text-align: left;
 	cursor: pointer;
 }
+
+.sous-menu li:hover {
+	background-color: rgba(211, 2, 2, 0.7);
+	border-radius: 25px 0;
+}
+
 .sous-menu li:before {
 	content: '';
 	position: absolute;
@@ -118,8 +124,24 @@ p {
 	width: 30px;
 	top: 20px;
 	left: 8px;
-	background: #d30202;
 }
+
+.sous-menu li.imagera:before {
+	background: url("../images/icon-imagera.png") center center no-repeat;
+}
+
+.sous-menu li.groupe-consensus:before {
+	background: url("../images/icon-groupe-consensus.png") center center no-repeat;
+}
+
+.sous-menu li.pixel-cookers:before {
+	background: url("../images/icon-pixel-cookers.png") center center no-repeat;
+}
+
+.sous-menu li.lab:before {
+	background: url("../images/icon-lab.png") center center no-repeat;
+}
+
 .sous-menu li span{
 	padding-left: 50px;
 }
