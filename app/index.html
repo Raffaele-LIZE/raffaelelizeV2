@@ -18,7 +18,7 @@
 		</div>
 		<div class="top-bar row">
 			<div class="col-xs-12 col-sm-6 col-md-4 logo">
-				<img class="logo" src="images/raffaelelize-logo.png" alt="raffaelelize-logo">
+				<a ui-sref="home"><img class="logo" src="images/raffaelelize-logo.png" alt="raffaelelize-logo"></a>
 			</div>
 			<div class="col-xs-12 col-sm-6 col-md-8 main-menu">
 				<!-- <div class="burger" style="width:20px; height:20px; background-color:red;"> -->
@@ -28,8 +28,8 @@
 						<li class="col-md-3 item-menu projects">Mes projets
 							<!-- Can't put multi ui-sref in same tag -->
 							<div class="sous-menu">
-								<ul ng-repeat="project in projects">
-									<li>
+								<ul>
+									<li ng-repeat="project in projects" class="{{project.class}}">
 										<span><a ui-sref="project({id:project.id})">{{project.name}}</a></span>
 									</li>
 								</ul>
