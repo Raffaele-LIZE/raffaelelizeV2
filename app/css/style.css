@@ -197,6 +197,34 @@ p {
 	color: #2b2b2b;
 }
 
+.carousel .owl-prev {
+	position: absolute;
+	bottom: 40%;
+	left: -50px;
+	color: #fff;
+}
+
+.carousel .owl-prev:before {
+	content: "";
+	display: block;
+	height: 120px;
+	background: url("../images/slider-left.png") center center no-repeat;
+}
+
+.carousel .owl-next {
+	position: absolute;
+	bottom: 40%;
+	right: -50px;
+	color: #fff;
+}
+
+.carousel .owl-next:before {
+	content: "";
+	display: block;
+	height: 120px;
+	background: url("../images/slider-right.png") center center no-repeat;
+}
+
 .carousel .owl-dots {
 	position: absolute;
 	right: 15%;
