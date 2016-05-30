@@ -133,12 +133,30 @@ app.factory('ContentService', function() {
       description: 'Tous le projets que vous trouverez dans cette section me permettre de tester des nouvelles techno, de nouvelles approche et son des projets cool mais sérieux. Enjoy ! =)',
       site_url: 'http://www.consensus-online.fr/',
       works: [{
+        title: 'Raffaelelize.fr',
+        mission: 'Conception de mon site Portfolio qui présente mes compétences et retrasse mes différentes expériences professionnels et personnels',
+        tools: ['AngularJS','Npm','Bower','Gulp','Git'],
+        problem: '',
+        resolve: '',
+        images: ['raffaelelize1.png'],
+        site_url: ''
+      },
+      {
         title: 'MétroQuizz',
         mission: 'Réalisation d\'une application mobile cross-platform, culturel et historique lié au station de métro parisien',
-        tools: ['html', 'css', 'javascript'],
+        tools: ['AngularJS','Ionic','Npm','Bower','Gulp','Git'],
         problem: '',
         resolve: '',
         images: ['metroquizz1.png'],
+        site_url: ''
+      },
+      {
+        title: 'La Mine',
+        mission: 'Conception et développement d\'une application mobile native IOS pour une association de ressourcerie ayant pour but de collecter et redistribuer des objets usagés',
+        tools: ['Swift','CocoaPods','Git'],
+        problem: '',
+        resolve: '',
+        images: [],
         site_url: ''
       }]
     }]
