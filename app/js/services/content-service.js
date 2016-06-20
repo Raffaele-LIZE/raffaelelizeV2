@@ -126,6 +126,47 @@ app.factory('ContentService', function() {
       }]
     }, {
       id: 3,
+      name: 'Mobile Spot',
+      class: 'mobile-spot',
+      banner: 'images/banner_mobile-spot.jpg',
+      baseline: 'Mobile-Spot répond à votre besoin avec des applications sur mesure pour tout type de smartphone, tablette ou PC.',
+      description: 'Vous gérez un lieu ou un événement et vous souhaitez faire gagner du temps à vos visiteurs, leur offrir plus d’opportunités, augmenter votre visibilité et en faire bénéficier les marques présentes.\n Forts de notre expérience dans la cartographie interactive et la géolocalisation indoor, nous avons développé Mobigeo® , un module qui comprend une fonction plan et itinéraire, doté de géolocalisation outdoor / indoor, et de services géolocalisés dont les geoGroupes® . Grâce à cette fonctionnalité très simple d’emploi, vos visiteurs peuvent partager et suivre leurs positions en temps réel. Cela leur permet de se retrouver très facilement dans votre lieu sans les contraintes d’un rendez-vous précis et de l’attente associée.',
+      site_url: 'http://www.mobile-spot.com/',
+      works: [{
+        title: 'SDK(Software Development Kit) Mobigeo',
+        mission: 'Conception et développement de nouvelles fonctionalité du SDK Mobigeo afin de le rendre plus souple et plus indispensable',
+        tools: ['Vanilla JS','Npm','Bower','Grunt','Git'],
+        problem: 'Chaque fonctionnalité doit être complétement indépendante des unes des autres.',
+        resolve: 'Développement modulaire à l\'aide de pattern design(singleton et modul).',
+        images: ['top-secret.png'],
+        site_url: ''
+      }, {
+        title: 'Mobile Spot DÉMO',
+        mission: 'Conception et développement d\'une application de démonstration de toutes les fonctionnalitées regroupé dans Mobigeo afin de faciliter et augmenter l\'impacte de notre solution lors des rendez-vous client',
+        tools: ['Ionic','Cordova', 'SDK Mobigeo', 'Bower','Grunt','Git'],
+        problem: 'Gestion des caches avec Ionic',
+        resolve: 'Activion et désactivation du système de cache vers l\'avant que propose Ionic en fonction du parcours utilisateur sur l\'application',
+        images: ['top-secret.png'],
+        site_url: ''
+      }, {
+        title: 'Font Romeu & Pyrénnée 2000',
+        mission: 'Conception et développement d\'une application mobile pour les stations de ski Font-Romeu et Pyrénnée 2000 dans le cadre d\'un POC(Proof of concept)',
+        tools: ['Ionic','Cordova', 'SDK Mobigeo', 'Bower','Grunt','Git'],
+        problem: '',
+        resolve: '',
+        images: ['top-secret.png'],
+        site_url: ''
+      }, {
+        title: 'Micronora 2016',
+        mission: 'Conception et développement d\'une application mobile le salon international des microtechniques. Ce salon très ciblé, réuni l\'ensemble de la filière microtechnique, et propose une offre multi-technologique très large, qui va de la R&D à la sous-traitance jusqu\'aux technologies de production.',
+        tools: ['CakePHP','Cordova', 'Vanilla JS', 'Bower','Grunt','Git'],
+        problem: '',
+        resolve: '',
+        images: ['top-secret.png'],
+        site_url: ''
+      }]
+    }, {
+      id: 4,
       name: 'Projets personnels',
       class: 'lab',
       banner: 'images/banner_personal-projects.jpg',
@@ -156,7 +197,7 @@ app.factory('ContentService', function() {
         tools: ['Swift','CocoaPods','Git'],
         problem: '',
         resolve: '',
-        images: [],
+        images: ['la-mine1.png'],
         site_url: ''
       }]
     }]

@@ -138,6 +138,10 @@ p {
 	background: url("../images/icon-pixel-cookers.png") center center no-repeat;
 }
 
+.sous-menu li.mobile-spot:before {
+	background: url("../images/icon-mobile-spot.png") center center no-repeat;
+}
+
 .sous-menu li.lab:before {
 	background: url("../images/icon-lab.png") center center no-repeat;
 }
