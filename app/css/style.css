@@ -268,9 +268,9 @@ p {
 
 .presentation .pix {
 	margin-top: 20px;
-	height: 300px;
+	height: 500px;
 	border: 1px solid grey;
-	border-radius: 150px;
+	border-radius: 0 50px;
 	background: url("../images/raffaele_lize.png") center no-repeat;
 	background-size: cover;
 }
